@@ -3,6 +3,7 @@
     "prettier": "^1.14.2"
   },
   "scripts": {
-    "format": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.js\""
+    "fix": "eslint --fix \"src/**/*.js\"",
+    "format": "prettier --single-quote --trailing-comma es5 --write \"src/**/*.js\" && yarn fix"
   }
 }
